@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Sophisticated hospitality palette
+        sage: {
+          50: '#f6f7f4',
+          100: '#e9ebe4',
+          200: '#d4d8ca',
+          300: '#b8c0a7',
+          400: '#9ca688',
+          500: '#7d8a6b',
+          600: '#6b7659',
+          700: '#58614a',
+          800: '#4a523f',
+          900: '#3f4537',
+        },
+        charcoal: {
+          50: '#f7f7f6',
+          100: '#e4e4e1',
+          200: '#c9c9c4',
+          300: '#a8a89f',
+          400: '#8a8a7e',
+          500: '#6f6f65',
+          600: '#5a5a52',
+          700: '#4a4a44',
+          800: '#3d3d39',
+          900: '#2d2d2a',
+        },
+        cream: {
+          50: '#fefefe',
+          100: '#fdfcf9',
+          200: '#faf8f1',
+          300: '#f5f1e6',
+          400: '#ede6d3',
+          500: '#e0d4b7',
+          600: '#d1c199',
+          700: '#bfa975',
+          800: '#a08c5c',
+          900: '#8a7650',
+        },
+        bronze: {
+          50: '#fdf9f3',
+          100: '#faf0e1',
+          200: '#f4dfc2',
+          300: '#ecc898',
+          400: '#e2ab6c',
+          500: '#d99148',
+          600: '#cb7a3d',
+          700: '#a96334',
+          800: '#885032',
+          900: '#6f422b',
+        },
+        navy: {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+        display: ['Cormorant Garamond', 'serif'],
+        elegant: ['Crimson Text', 'serif'],
+        modern: ['Inter', 'system-ui', 'sans-serif'],
+        clean: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-in-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'slide-in-left': 'slideInLeft 0.6s ease-out',
+        'slide-in-right': 'slideInRight 0.6s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideInLeft: {
+          '0%': { transform: 'translateX(-20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}

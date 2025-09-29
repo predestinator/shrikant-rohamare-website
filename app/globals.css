@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Selection styles */
+::selection {
+  background: rgba(125, 138, 107, 0.3);
+  color: #0f172a;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-sage-600 to-sage-500 text-cream-50 px-8 py-4 rounded-full font-clean font-semibold text-lg shadow-xl hover:from-sage-500 hover:to-bronze-500 transition-all duration-300 hover:shadow-2xl transform hover:-translate-y-2 relative overflow-hidden;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-cream-300/40 text-cream-100 px-8 py-4 rounded-full font-clean font-semibold text-lg backdrop-blur-md hover:bg-cream-100/10 transition-all duration-300;
+  }
+
+  .glass-morphism {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(125, 138, 107, 0.5);
+  }
+
+  .bg-mesh {
+    background-image: radial-gradient(circle at 25% 25%, rgba(125, 138, 107, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, rgba(217, 145, 72, 0.1) 0%, transparent 50%);
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-sage-800 to-bronze-600 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
