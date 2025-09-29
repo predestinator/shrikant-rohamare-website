@@ -29,24 +29,24 @@ const ExploreContent = () => {
     {
       id: 'about',
       title: 'Professional Journey',
-      subtitle: 'Experience & Vision',
+      subtitle: 'Experience &amp; Vision',
       icon: User,
       description: 'Discover my path through the hospitality industry...',
       content: (
         <div className="space-y-6">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-sage-200">
             <h3 className="text-2xl font-display font-bold text-charcoal-900 mb-4">My Story</h3>
-            <p className="text-charcoal-700 leading-relaxed mb-4 font-clean">
-              With over <strong>12 years of experience</strong> in the hospitality industry, I've had the privilege of working across 
-              <em className="font-elegant">three countries</em> and with some of the world's most prestigious hotel brands.
-            </p>
+                <p className="text-charcoal-700 leading-relaxed mb-4 font-clean">
+                  With over <strong>12 years of experience</strong> in the hospitality industry, I&apos;ve had the privilege of working across 
+                  <em className="font-elegant">three countries</em> and with some of the world&apos;s most prestigious hotel brands.
+                </p>
             <p className="text-charcoal-700 leading-relaxed mb-4 font-clean">
               My journey began in <strong>India</strong>, where I developed foundational skills in hospitality operations. 
               I then expanded my expertise in <strong>Canada</strong> and the <strong>UK</strong>, gaining invaluable international 
               perspective and cross-cultural leadership experience.
             </p>
             <p className="text-charcoal-700 leading-relaxed font-clean">
-              Today, as <em className="font-elegant">Director of Sales Operations</em> at True Key Hotels & Resorts, 
+              Today, as <em className="font-elegant">Director of Sales Operations</em> at True Key Hotels &amp; Resorts, 
               I focus on <strong>strategic revenue optimization</strong> and <strong>operational excellence</strong>, 
               consistently delivering growth that exceeds industry standards.
             </p>
@@ -70,7 +70,7 @@ const ExploreContent = () => {
     {
       id: 'experience',
       title: 'Career Milestones',
-      subtitle: 'Leadership & Achievements',
+      subtitle: 'Leadership &amp; Achievements',
       icon: Briefcase,
       description: 'Key roles at industry-leading organizations...',
       content: (
@@ -206,8 +206,8 @@ const ExploreContent = () => {
                   </div>
                 </div>
                 <p className="text-charcoal-700 italic font-elegant">
-                  "Shrikant's strategic approach to revenue management transformed our property's performance. 
-                  His ability to analyze market trends and implement effective solutions is exceptional."
+                  &ldquo;Shrikant&apos;s strategic approach to revenue management transformed our property&apos;s performance. 
+                  His ability to analyze market trends and implement effective solutions is exceptional.&rdquo;
                 </p>
                 <div className="flex text-bronze-400 mt-3">
                   {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
@@ -225,8 +225,8 @@ const ExploreContent = () => {
                   </div>
                 </div>
                 <p className="text-charcoal-700 italic font-elegant">
-                  "Working with Shrikant was a game-changer for our operations. His international experience 
-                  and deep understanding of hospitality dynamics helped us achieve record-breaking results."
+                  &ldquo;Working with Shrikant was a game-changer for our operations. His international experience 
+                  and deep understanding of hospitality dynamics helped us achieve record-breaking results.&rdquo;
                 </p>
                 <div className="flex text-bronze-400 mt-3">
                   {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
@@ -239,7 +239,7 @@ const ExploreContent = () => {
     },
     {
       id: 'contact',
-      title: 'Let\'s Connect',
+      title: 'Let&apos;s Connect',
       subtitle: 'Start Your Transformation',
       icon: Mail,
       description: 'Ready to elevate your hospitality business?',
@@ -294,7 +294,7 @@ const ExploreContent = () => {
               <div className="bg-sage-50 rounded-xl p-6">
                 <h4 className="font-clean font-bold text-charcoal-900 mb-4">Ready to Transform?</h4>
                 <p className="text-charcoal-700 text-sm mb-6 font-clean">
-                  Let's discuss how I can help elevate your hospitality business to new heights. 
+                  Let&apos;s discuss how I can help elevate your hospitality business to new heights. 
                   Schedule a consultation today.
                 </p>
                 <button className="w-full bg-charcoal-900 text-cream-50 py-3 rounded-xl font-clean font-semibold hover:bg-charcoal-800 transition-colors duration-300">

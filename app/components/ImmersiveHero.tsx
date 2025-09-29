@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Sparkles, TrendingUp, Award, ChevronDown } from 'lucide-react'
 import { useRef, useEffect, useState } from 'react'
+import Image from 'next/image'
 
 const ImmersiveHero = () => {
   const ref = useRef(null)
@@ -173,12 +174,14 @@ const ImmersiveHero = () => {
       >
         <div className="relative w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
-          <img
-            src="/shrikant-rohamare.png"
-            alt="Shrikant Rohamare"
-            className="w-full h-full object-cover object-top opacity-80"
-            loading="eager"
-          />
+              <Image
+                src="/shrikant-rohamare.png"
+                alt="Shrikant Rohamare"
+                width={400}
+                height={600}
+                className="w-full h-full object-cover object-top opacity-80"
+                priority
+              />
           
           {/* Floating Achievement Badges - Desktop Only */}
           <motion.div
