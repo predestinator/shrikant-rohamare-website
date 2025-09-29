@@ -443,7 +443,7 @@ const ExploreContent = () => {
               </h3>
               <p className="text-charcoal-700 font-clean leading-relaxed">
                 Choose from the menu above to dive deeper into my professional background, 
-                services, and the results I've achieved for hospitality businesses worldwide.
+                services, and the results I&apos;ve achieved for hospitality businesses worldwide.
               </p>
             </div>
           </motion.div>
